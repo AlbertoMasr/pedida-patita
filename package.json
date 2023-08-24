@@ -9,6 +9,18 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@babylonjs/core": "^6.17.1",
     "vite": "^4.4.5"
+  },
+  "description": "Sistema XR para la pedida de la patita de mi chihua",
+  "main": "main.js",
+  "keywords": [
+    "vite",
+    "javascript"
+  ],
+  "author": "Manuel Alberto Sotelo Rivas <albertomasr@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "earcut": "^2.2.4"
   }
 }
