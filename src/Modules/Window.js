@@ -1,7 +1,7 @@
 import * as BABYLON from '@babylonjs/core';
 import * as GUI from '@babylonjs/gui';
 
-export async function ventana(name, texto, final, scene) {
+const createWindow = (name, text, final, scene) => {
 
     const width = 1920
     const height = 1080
@@ -34,7 +34,7 @@ export async function ventana(name, texto, final, scene) {
     windowRectangle.addControl(windowGrid);
 
     const text1 = new GUI.TextBlock();
-    text1.text = texto;
+    text1.text = text;
     text1.height = "300px";
     text1.color = "white";
     text1.textWrapping = GUI.TextWrapping.WordWrap;
@@ -99,3 +99,5 @@ export async function ventana(name, texto, final, scene) {
     return [windowMesh, windowRectangle, button1, text1];
 
 }
+
+export { createWindow }

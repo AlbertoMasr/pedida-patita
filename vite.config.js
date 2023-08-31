@@ -2,7 +2,7 @@ import fs from 'fs';
 
 export default {
     server: {
-        host: '192.168.1.79',
+        host: process.env.VITE_IP || '0.0.0.0',
         port: 3000,
         https: {
             key: fs.readFileSync('./SSL/cert.key'),
